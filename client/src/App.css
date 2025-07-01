@@ -4,3 +4,89 @@
 * {
   font-family: 'Outfit', sans-serif;
 }
+
+@layer base{
+  html{
+    scroll-behavior: smooth;
+  }
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+
+.rich-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #1f2937; /* gray-800 */
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.rich-text h1,
+.rich-text h2,
+.rich-text h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: black; /* blue-600 for headers */
+}
+
+.rich-text h1 {
+  font-size: 1.5rem; /* text-2xl */
+}
+
+.rich-text h2 {
+  font-size: 1.25rem; /* text-xl */
+}
+
+.rich-text h3 {
+  font-size: 1.125rem; /* text-lg */
+}
+
+.rich-text p {
+  margin: 0.25rem 0;
+  color: #374151; /* gray-700 */
+}
+
+.rich-text ul,
+.rich-text ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.rich-text ul {
+  list-style-type: disc;
+}
+
+.rich-text ol {
+  list-style-type: decimal;
+}
+
+.rich-text li {
+  margin-bottom: 0.5rem;
+}
+
+.rich-text a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.rich-text blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #e5e7eb; /* light gray */
+  color: #475569;
+  font-style: italic;
+}
+
+.rich-text strong {
+  font-weight: 700;
+}
+
+.rich-text em {
+  font-style: italic;
+}
